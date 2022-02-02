@@ -1,0 +1,56 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    border: 0.15rem solid;
+    margin: 5rem 0;
+    padding: 0.5rem;
+}
+
+.row {
+    display: flex;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid;
+    padding: 0 0.5rem;
+}
+
+.input:invalid {
+    border: 2px solid red;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    margin: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.button:active {
+    background: #959798;
+}
+
+@media screen and (max-width: 768px){
+    .row {
+        flex-direction: column;
+    }
+
+    .input {
+        width: auto;
+    }
+
+    .button {
+        width: auto;
+        padding: 0.4rem 1rem;
+    }
+}
